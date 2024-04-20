@@ -38,7 +38,7 @@ function adicionaLinha(){
 
         linhas += linha;
     }
-    
+
     nomeAti.value = '';
     notaAti.value = '';
     
@@ -63,6 +63,6 @@ function calculaMedia(){
 function atualizaMedia(){
     const mediaFinal = calculaMedia();
     console.log(mediaFinal)
-    document.getElementById('media-final').innerHTML = mediaFinal
+    document.getElementById('media-final').innerHTML = mediaFinal.toFixed(2);
     document.getElementById('media-resultado').innerHTML = mediaFinal >= 7 ? spanAprovado : spanReprovado;
 }
